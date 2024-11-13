@@ -4,7 +4,10 @@ const Login = () => {
     <div className="*:w-full">
       <h2 className="font-semibold text-xl mb-4">Login With</h2>
       <button className="btn mb-2">
-        <FaGoogle /> Login With Google
+        <span className="text-blue-600">
+          <FaGoogle />
+        </span>{" "}
+        Login With Google
       </button>
       <button className="btn">
         <FaGithub /> Login With Github

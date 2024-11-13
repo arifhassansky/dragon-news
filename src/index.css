@@ -7,3 +7,7 @@ body {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active {
+  background: #e7e7e7;
+}

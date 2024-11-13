@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import Advertise from "../Advertise";
 import Categories from "../components/Categories";
 import Header from "../components/Header";
@@ -21,7 +22,7 @@ const Home = () => {
           <Categories />
         </aside>
         <section className="col-span-2">
-          <h2 className="font-semibold text-xl">Dragon News Home</h2>
+          <Outlet />
         </section>
         <aside>
           <Advertise />

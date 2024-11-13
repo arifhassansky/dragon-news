@@ -5,13 +5,22 @@ const FindUs = () => {
       <h2 className="font-semibold text-xl mb-4">Find Us On</h2>
       <div className="join join-vertical">
         <button className="btn bg-base-100 join-item justify-start">
-          <FaFacebook /> Facebook
+          <span className="text-blue-700">
+            <FaFacebook />
+          </span>{" "}
+          Facebook
         </button>
         <button className="btn bg-base-100 join-item justify-start">
-          <FaTwitter /> Twitter
+          <span className="text-blue-400">
+            <FaTwitter />
+          </span>{" "}
+          Twitter
         </button>
         <button className="btn bg-base-100 join-item justify-start">
-          <FaInstagram /> Instragram
+          <span className="text-red-400">
+            <FaInstagram />
+          </span>{" "}
+          Instragram
         </button>
       </div>
     </div>

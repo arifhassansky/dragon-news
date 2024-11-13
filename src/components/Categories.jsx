@@ -16,7 +16,7 @@ const Categories = () => {
         {categories.map((category) => (
           <NavLink
             to={`category/${category.category_id}`}
-            className="btn rounded-none"
+            className="btn bg-base-100 border-none text-gray-500 font-medium rounded-none"
             key={category.category_id}
           >
             {category.category_name}
