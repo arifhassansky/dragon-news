@@ -1,6 +1,7 @@
-import React from "react";
+/* eslint-disable react/prop-types */
 import { FaStar, FaEye } from "react-icons/fa";
 import { CiBookmark, CiShare2 } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 const NewsCard = ({ news }) => {
   return (
@@ -36,7 +37,9 @@ const NewsCard = ({ news }) => {
           />
           <p className="text-gray-700 mb-2">
             {news.details.slice(0, 320)}...{" "}
-            <span className="text-[#FF8C47] font-bold">Read More</span>
+            <Link to={`/news/${news._id}`} className="text-[#FF8C47] font-bold">
+              Read More
+            </Link>
           </p>
           <hr className="mt-6" />
           <div className="flex items-center justify-between w-full mt-4">
